@@ -10,5 +10,11 @@ If you don't, you end up spending time hand checking some numbers from the test 
 
 ### Decomposing and Refactoring
 
+1.
 Tip. Refactoring changes the programs in small steps. If you make a mistake, it is easy to find the bug.
 
+2.
+Is renaming worth the effort?
+Good code should communicate what it is doing clearly, and variable names are a key to clear code
+
+Tip. Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
