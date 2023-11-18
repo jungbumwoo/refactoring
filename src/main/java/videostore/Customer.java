@@ -19,6 +19,13 @@ public class Customer {
         return _name;
     };
 
+    /*
+    *
+    * Statement routine does far too much
+    * Many of the things that it does should really be done by the other classes.
+    * 변경이 생길 경우, 기존 코드는 재사용될 수 없음
+    * 변경하고자 할 때, 여러 선택지가 존재할 것이고 이로 인해 다른 부분에도 영향을 주거나, 계속해서 변경할 수 밖에 없고 이로 인한 리소스 소모
+    * */
     public String statement(){
         double totalAmount = 0;
         int frequentRenterPoints = 0;
@@ -45,7 +52,6 @@ public class Customer {
                     if (each.getDaysRented() > 3)
                         thisAmount += (each.getDaysRented() - 3) * 1.5;
                     break;
-
             }
 
             // add frequent renter points
