@@ -18,3 +18,10 @@ Is renaming worth the effort?
 Good code should communicate what it is doing clearly, and variable names are a key to clear code
 
 Tip. Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+
+3.
+Moving the Amount Calculation
+
+I like to get rid of temporary variables such as this as much as possible. 
+Temps are often a problem in that they cause a lot of parameters to be passed around when they don't have to be. 
+You can easily lose track of what they are there for. They are particularly insidious in long methods.
