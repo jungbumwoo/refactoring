@@ -3,6 +3,12 @@ package main.java.videostore;
 abstract class Price {
     abstract int getPriceCode();
     abstract double getCharge(int daysRented);
+
+    // In this case, I don't make the superclass method abstract.
+    // Instead I create an overriding method for new releases and leave a defined method (as the default) on the superclass.
+    int getFrequentRenterPoints(int daysRented) {
+        return 1;
+    }
 }
 
 class ChildrensPrice extends Price {
@@ -25,6 +31,10 @@ class NewReleasePrice extends Price {
 
     double getCharge(int daysRented) {
         return daysRented * 3;
+    }
+
+    int getFrequentRenterPoints(int daysRented) {
+        return (daysRented > 1) ? 2: 1;
     }
 }
 
